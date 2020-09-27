@@ -21,7 +21,7 @@ function hideLoadingSpinner() {
 async function getQuote() {
   showLoadingSpinner();
   //proxy url to avoid cors error
-  const proxyUrl = `https://cors-anywhere.herokuapp.com/`;
+  const proxyUrl = "https://pacific-badlands-15182.herokuapp.com/";
   const apiUrl = `https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json`;
   try {
     const response = await fetch(proxyUrl + apiUrl);
